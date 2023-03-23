@@ -62,7 +62,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             },
             child: Column(
               mainAxisSize: MainAxisSize.max,
-              children: [],
+              children: [
+                InkWell(
+                  onTap: () async {
+                    context.pushNamed('page2');
+                  },
+                  child: Text(
+                    'Hello World this is test page 1',
+                    style: FlutterFlowTheme.of(context).bodyText1,
+                  ),
+                ),
+              ],
             ),
           ),
         ),

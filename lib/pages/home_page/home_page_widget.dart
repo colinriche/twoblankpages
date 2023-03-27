@@ -71,7 +71,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   },
                   child: Text(
                     'Hello World this is test page 1',
-                    style: FlutterFlowTheme.of(context).bodyText1,
+                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                          fontFamily: 'Roboto',
+                          color: Color(0xFFFF0000),
+                          fontSize: 48.0,
+                          fontWeight: FontWeight.w900,
+                        ),
                   ),
                 ),
               ],
